@@ -3,7 +3,7 @@
 **
 ** MIT License
 **
-** Copyright (c) 2019 Dmitry Bravikov <dmitry@bravikov.pro>
+** Copyright (c) 2019-2020 Dmitry Bravikov <dmitry@bravikov.pro>
 **
 ** Permission is hereby granted, free of charge, to any person obtaining a
 ** copy of this software and associated documentation files (the "Software"),
@@ -45,7 +45,7 @@ private:
 };
 
 template<typename T>
-constexpr Find<T> find(T&& value)
+constexpr Find<T> find(const T& value)
 {
-    return Find<T>{std::forward<T>(value)};
+    return Find<T>{value};
 }

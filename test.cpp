@@ -1,9 +1,3 @@
-/**
- * Run:
- *     g++ -Wall test.cpp -lboost_unit_test_framework -o test && ./test
- *
- * */
-
 #define BOOST_TEST_MODULE my-algorithm
 #define BOOST_TEST_DYN_LINK
 #include <boost/test/unit_test.hpp>
@@ -18,3 +12,4 @@ BOOST_AUTO_TEST_CASE(in)
     BOOST_TEST(find(5).in(1, 2, 3, 4, 5, 6) == true);
     BOOST_TEST(find(7).in(1, 2, 3, 4, 5, 6) == false);
 }
+
