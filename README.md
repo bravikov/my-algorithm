@@ -1,4 +1,4 @@
-Find value among values like in Python:
+Find a value among values like in Python:
 
     #include "my-algorithm.hpp"
 
